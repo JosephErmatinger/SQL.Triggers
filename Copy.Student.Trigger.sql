@@ -1,0 +1,8 @@
+CREATE TRIGGER copyStudent
+ON STUDENT
+AFTER UPDATE
+AS
+BEGIN
+	SELECT * INTO copyStudent
+	FROM student
+END
